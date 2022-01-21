@@ -1,0 +1,310 @@
+/* Universal Start */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #1d1d1d;
+}
+
+h6 {
+  color: #d8d8d8;
+}
+
+button {
+  font-size: 0.8rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background-color: #1d1d1d;
+  color: aliceblue;
+  padding: 13px 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+button:hover {
+  background-color: #3a3833;
+}
+
+hr {
+  width: 30px;
+  height: 2px;
+  background-color: coral;
+}
+
+.star {
+  padding: 10px 0;
+}
+
+.star i {
+  font-size: 0.8rem;
+  color: goldenrod;
+}
+
+/* End Universal Start */
+
+/* Nav Start */
+
+.navbar {
+  font-size: 16px;
+  top: 0;
+  left: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  padding: 0 20px;
+  color: black;
+  transition: 0.3 ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link .active .navbar i .active {
+  color: coral;
+}
+
+.navbar i {
+  font-size: 1.2rem;
+  padding: 0 7px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3 ease;
+}
+
+#bar {
+  font-size: 1.5rem;
+  padding: 7px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.5s ease;
+  color: black;
+}
+
+#bar:hover,
+#bar .active {
+  color: #fff;
+}
+
+/* END Nav Start */
+
+/* Mobile Nav Start */
+
+@media only screen and (max-width: 991px) {
+  body > nav > div > button:hover,
+  body > nav > div > button:focus {
+    background-color: #fb774b;
+  }
+
+  body > nav > div > button:hover #bar,
+  body > nav > div > button:focus #bar {
+    color: #fff;
+  }
+
+  #navbarSupportedContent > ul {
+    margin: 1rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  #navbarSupportedContent > ul > li:nth-child(n) > a {
+    padding: 10px 0;
+  }
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+/* END Mobile Nav Start */
+
+/* Home Start */
+
+#home {
+  background-image: url("img/back.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: top 90px center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#home span {
+  color: coral;
+}
+
+/* END Home Start */
+
+/* New Start */
+
+#new .one img {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#new .one .details {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.5 ease;
+}
+
+#new .one:hover .details {
+  cursor: pointer;
+  background-color: rgba(245, 178, 178, 0.7);
+}
+
+#new .one .details button {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2a2a2a;
+  background: none;
+  border-bottom: 1px solid #2a2a2a;
+  padding: 2.5px;
+  transform: translateY(70px);
+  transition: 0.5 ease;
+}
+
+#new .one .details button:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+#new .one:nth-child(1) .details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+#new .one:nth-child(2) .details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#new .one:nth-child(3) .details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+}
+/* END New  */
+
+/* Product Start */
+
+.product {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.product img {
+  transition: 0.5s ease;
+}
+
+.product:hover img {
+  opacity: 0.5;
+}
+
+.product .buy-button {
+  background: coral;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.3 all;
+}
+
+.product:hover .buy-button {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* End Product  */
+
+/* Banner Start  */
+#banner {
+  background-image: url("img/banner/2.jpg");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: top 70px center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#banner h4 {
+  color: #d8d8d8;
+}
+
+#banner h1 {
+  color: #fff;
+}
+
+#banner button {
+  background-color: coral;
+}
+
+/* Banner END  */
+
+/* Footer Start  */
+
+footer {
+  background-color: #222222;
+}
+
+footer h5 {
+  color: #d8d8d8;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+/* Footer End  */
